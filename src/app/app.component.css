@@ -1,0 +1,29 @@
+
+div.containerX {
+  margin-bottom: 10px;
+  color: white;
+  padding: 5px;
+  border: solid 1px #b6b6b6;
+  font-family: verdana;
+  font-style: normal;
+  background: lightblue;
+  text-align:center;
+}
+
+div {
+  border: solid 1px #b6b6b6;
+  box-sizing: content-box !important;
+  font-family: verdana;
+  font-style: normal;
+  background: lightgreen;
+  height:auto;
+  color: black;
+  padding: 5px;
+}
+
+
+
+
+
+
+
