@@ -14,12 +14,8 @@ export class AppComponent implements OnInit, OnDestroy {
   watcher: Subscription;
   activeMediaQuery = '';
 
-  constructor(media: ObservableMedia) {
+  constructor(public media: ObservableMedia) {
     this.watcher = media.subscribe((change: MediaChange) => {
-      console.log('change.mediaQuery = ' + change.mediaQuery);
-      console.log('(${change.mediaQuery}) = ' + `(${change.mediaQuery})`);
-      console.log(` ...change.mqAlias = ` + `${change.mqAlias}`);
-      console.log('change.mqAlias = ' + change.mqAlias);
       this.activeMediaQuery = change ? `'${change.mqAlias}' = (${change.mediaQuery})` : '';
       if ( change.mqAlias === 'xs') {
         this.loadMobileContent();

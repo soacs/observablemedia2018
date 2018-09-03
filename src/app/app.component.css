@@ -21,7 +21,9 @@ div {
   padding: 5px;
 }
 
-
+div.ad-content {
+  background: peachpuff !important;
+}
 
 
 
